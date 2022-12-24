@@ -1,29 +1,44 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Home | The Buildy Bunch</title>
+        <link rel="icon" type="image/x-icon" href="https://github.com/TheBuildyBunch/thebuildybunch.github.io/blob/ad5a69d825f088a107f251cdc5449ab0ca87e8cb/images/BuildyBunchLogo2022.png?raw=true">
         <style>
             body {
                 background-color: rgb(25, 25, 25);
             }
-            .nav {
-                background-color: #0000ff;
-                font-size: 20px;
-                height: 40px;
+            nav {
+                background: rgb(0, 0, 255);
                 margin: 0 auto;
                 margin-bottom: 20px;
                 display: flex;
-                padding: 10px;
+                padding: 20px;
                 border-radius: 20px;
+                height: 45px;
             }
-            #home {
-                padding-top: 10px;
-                text-decoration: none;
-                color: rgba(255, 255, 255, 0.500);
-                font-style: oblique;
-                padding-left: 92%;
+            #nav-img {
+                height: 45px;
+                width: 45px;;
             }
-            #projects {
-                padding-top: 10px;
+            #nav-h1 {
+                display: flex;
+                color: white;
+                flex: 1;
+                margin: 10px;
+            }
+            .nav-li {
+                display: inline-block;
+                padding: 0 10px;
+            }
+            .nav-a {
+                font-size: 20px;
+                color:#fff;
+            }
+          #location {
+            color:rgba(255, 255, 255, 0.75);
+            font-style:oblique;
+          }
+            a {
                 text-decoration: none;
                 color: #fff;
             }
@@ -62,10 +77,18 @@
         </style>
     </head>
     <body>
-        <div class="nav">
-                <a id="home" href="index.html">Home</a>
-                <a id="projects" href="projects.html">Projects</a> 
-        </div>
+        <nav>
+            <img id="nav-img" src="https://github.com/TheBuildyBunch/thebuildybunch.github.io/blob/ad5a69d825f088a107f251cdc5449ab0ca87e8cb/images/BuildyBunchLogo2022.png?raw=true">
+            <h1 id="nav-h1">The Buildy Bunch</h1>
+            <ul id="nav-ul">
+                <li class="nav-li">
+                    <a class="nav-a" id="location" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-li">
+                    <a class="nav-a" href="projects.html">Projects</a>
+                  </li>
+            </ul>
+        </nav>
         <div class="intro">
             <h1 id="title">The Buildy Bunch</h1>
         </div> 
