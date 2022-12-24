@@ -5,25 +5,31 @@
             body {
                 background-color: rgb(25, 25, 25);
             }
-            .nav {
-                background-color: #0000ff;
-                font-size: 20px;
-                height: 40px;
+            nav {
+                background: rgb(0, 0, 255);
                 margin: 0 auto;
                 margin-bottom: 20px;
                 display: flex;
                 padding: 10px;
                 border-radius: 20px;
             }
-            #home {
-                padding-top: 10px;
-                text-decoration: none;
-                color: rgba(255, 255, 255, 0.500);
-                font-style: oblique;
-                padding-left: 92%;
+            #nav-ul {
+                list-style-image: none;
+                flex: 2;
             }
-            #projects {
-                padding-top: 10px;
+            .nav-li {
+                display: inline-block;
+                padding: 0 10px;
+            }
+            .nav-a {
+                font-size: 20px;
+                color:#fff;
+            }
+          #location {
+            color:rgba(255, 255, 255, 0.75);
+            font-style:oblique;
+          }
+            a {
                 text-decoration: none;
                 color: #fff;
             }
@@ -62,23 +68,19 @@
         </style>
     </head>
     <body>
-        <div class="nav">
-                <a id="home" href="index.html">Home</a>
-                <a id="projects" href="projects.html">Projects</a> 
-        </div>
+        <nav>
+            <ul id="nav-ul">
+                <li class="nav-li">
+                    <a class="nav-a" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-li">
+                    <a class="nav-a" id="location" href="projects.html">Projects</a>
+                  </li>
+            </ul>
+        </nav>
         <div class="intro">
             <h1 id="title">The Buildy Bunch</h1>
         </div> 
-        <div class="team">
-            <h1 class="header">Our Team</h1>
-            <div class="ac9">
-                <h1 class="names">Awsome_Creeper9</h1>
-                <img src="https://github.com/TheBuildyBunch/TheBuildyBunch/blob/88dfd72f5e3b23d5eac2061b484c3f521bed6c7f/images/AC9%20Skin.png?raw=true" alt="Awsome_Creeper9" width="500">
-            </div>
-            <div class="dt">
-                <h1 class="names">DrTemperance</h1>
-                <img src="https://github.com/TheBuildyBunch/TheBuildyBunch/blob/4c5e0f1122b0189525f5bd110d0c7dd407e21f12/images/Hannahs%20Skin.png?raw=true" alt="DrTemperance" width="500">
-            </div>
         </div>
     </body>
 </html>
