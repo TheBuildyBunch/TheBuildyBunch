@@ -46,19 +46,27 @@
                 color: rgb(0, 30, 255);
                 font-size: 100px;
                 font-family: Georgia;
-                background-image: url("https://github.com/TheBuildyBunch/TheBuildyBunch/blob/b57a6e3a5ed2c956392ebea4f6f6b3bce986cbdb/images/fireworks.png?raw=true");
-                background-size:cover;
-                padding: 190px;
-                padding-top: .5px;
-                width: 1272px;
-                height: 549px;
+                text-align: start;
+            }
+            #introimg {
+                width: 1885px;
+            }
+            #title {
                 text-align: center;
+                position: absolute;
+                top: 25%;
+                left: 2.5%;
+                transform: translate(0%, -75%);
+                text-shadow: -1px 1px 2px #fff, 1px 1px 2px #fff, 1px -1px 0 #fff, -1px -1px 0 #fff;
             }
             .ac9 {
                 border:solid blue;
                 width:fit-content;
                 text-align: center;
                 float:left;
+            }
+            .teamskins {
+                width: 500px;
             }
             .dt {
                 border:solid blue;
@@ -67,13 +75,13 @@
                 float: left;
             }
             .team {
-                padding-left: 300px;
                 color: white;
+                padding-left: 25%;
             }
             .header {
                 font-size: 60px;
                 font-family: 'Cooper Black';
-                padding-left: 350px
+                padding-left: 25%;
             }
         </style>
     </head>
@@ -91,17 +99,18 @@
             </ul>
         </nav>
         <div class="intro">
+            <img id="introimg" src="images/novaskin-wallpaper-fireworks - 4-10-23.jpg">
             <h1 id="title">The Buildy Bunch</h1>
         </div> 
         <div class="team">
             <h1 class="header">Our Team</h1>
             <div class="ac9">
                 <h1 class="names">Awsome_Creeper9</h1>
-                <img src="https://github.com/TheBuildyBunch/TheBuildyBunch/blob/88dfd72f5e3b23d5eac2061b484c3f521bed6c7f/images/AC9%20Skin.png?raw=true" alt="Awsome_Creeper9" width="500">
+                <img class="teamskins" src="images/AC9 Skin.png">
             </div>
             <div class="dt">
                 <h1 class="names">DrTemperance</h1>
-                <img src="https://github.com/TheBuildyBunch/TheBuildyBunch/blob/4c5e0f1122b0189525f5bd110d0c7dd407e21f12/images/Hannahs%20Skin.png?raw=true" alt="DrTemperance" width="500">
+                <img class="teamskins" src="images/DrTSkin.png">
             </div>
         </div>
     </body>
