@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Projects | The Buildy Bunch</title>
-        <link rel="icon" type="image/x-icon" href="images/BuildyBunchLogo2022.png">
+        <title>TEoTNE | The Buildy Bunch</title>
+        <link rel="icon" type="image/x-icon" href="images/teotne-map-img.png">
         <style>
             body {
                 background-color: rgb(25, 25, 25);
@@ -34,10 +34,6 @@
                 font-size: 20px;
                 color:#fff;
             }
-          #location {
-            color:rgba(255, 255, 255, 0.75);
-            font-style:oblique;
-          }
             a {
                 text-decoration: none;
                 color: #fff;
@@ -67,6 +63,87 @@
                 display:flex;
                 padding:0 20px;
             }
+            .slider {
+        width: 500px;
+        height: 300px;
+        background-color: yellow;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+        text-align: center;
+        overflow: hidden;
+      }
+      .image-container {
+        width: 3000px;
+        background-color: pink;
+        height: 300px;
+        clear: both;
+        position: relative;
+        -webkit-transition: left 2s;
+        -moz-transition: left 2s;
+        -o-transition: left 2s;
+        transition: left 2s;
+      }
+      .slide {
+        float: left;
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+      }
+      #slide-1:target ~ .image-container {
+        left: 0px;
+      }
+      #slide-2:target ~ .image-container {
+        left: -500px;
+      }
+      #slide-3:target ~ .image-container {
+        left: -1000px;
+      }
+      #slide-4:target ~ .image-container {
+        left: -1500px;
+      }
+      #slide-5:target ~ .image-container {
+        left: -2000px;
+      }
+      #slide-6:target ~ .image-container {
+        left: -2500px;
+      }
+      .buttons {
+        position: relative;
+        top: -20px;
+      }
+      .buttons a {
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        border-radius: 50px;
+        background-color: #000055;
+      }
+      #maptitle {
+        color: #ffffff;
+        font-size: 50px;
+        font-family: Georgia;
+        text-align: center;
+      }
+      #mapinfo {
+        font-size: 20px;
+        color: white;
+        text-align: center;
+        padding-top: 50px;
+      }
+      #downloaddiv {
+        padding-left: 893px;
+        padding-top: 50px;
+      }
+      #download {
+        background: #0f0;
+        color: black;
+        border-radius: 20px;
+        text-align: center;
+        display: flex;
+        width:100px;
+        padding-left: 5px;
+      }
         </style>
     </head>
     <body>
@@ -78,10 +155,51 @@
                     <a class="nav-a" href="index.html">Home</a>
                   </li>
                   <li class="nav-li">
-                    <a class="nav-a" id="location" href="projects.html">Projects</a>
+                    <a class="nav-a" href="projects.html">Projects</a>
                   </li>
             </ul>
         </nav>
+        <h1 id="maptitle">To Escape or To Not Escape (TEoTNE)</h1>
+        <div class="slider">
+            <span id="slide-1"></span>
+            <span id="slide-2"></span>
+            <span id="slide-3"></span>
+            <span id="slide-4"></span>
+            <span id="slide-5"></span>
+            <span id="slide-6"></span>
+            <div class="image-container">
+              <img src="images/prison.png" class="slide" width="500" height="300" />
+              <img src="images/shiver.png" class="slide" width="500" height="300" />
+              <img src="images/swamp.png" class="slide" width="500" height="300" />
+              <img src="images/temple.png" class="slide" width="500" height="300" />
+              <img src="images/sea.png" class="slide" width="500" height="300" />
+              <img src="images/school.png" class="slide" width="500" height="300" />
+            </div>
+            <div class="buttons">
+              <a href="#slide-1"></a>
+              <a href="#slide-2"></a>
+              <a href="#slide-3"></a>
+              <a href="#slide-4"></a>
+              <a href="#slide-5"></a>
+              <a href="#slide-6"></a>
+            </div>
+          </div>
+          <div id="downloaddiv">
+            <a id="download" href="maps/TEoTNE.zip" download>
+              <p>DOWNLOAD</p>
+            </a>
+          </div>
+          <div id="mapinfo">
+            <p>To Escape or To Not Escape is a puzzle/adventure map where you challenge your brain through 6 main and 1 hidden level. There are Easter Eggs in all of the main levels, so keep your eyes peeled.</p>
+            <br>
+            <p>Single Player</p>
+            <br>
+            <p>This map is for Java 1.16.5</p>
+            <br>
+            <p>-----------------------------------------------------------------------------------------------------------------------------------------</p>
+            <br>
+            <p>Report any bugs on our discord server: <a href="https://discord.gg/6bm5CTyKBG">https://discord.gg/6bm5CTyKBG</a></p>
+          </div>
         <div id="infodiv">
             <info>
                 <ul id="h1UL">
