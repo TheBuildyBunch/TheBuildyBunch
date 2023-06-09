@@ -1,57 +1,23 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         <title>Projects | The Buildy Bunch</title>
         <link rel="icon" type="image/x-icon" href="images/BuildyBunchLogo2022.png">
+        <link id="modeCSS" rel="stylesheet" type="text/css" href="index-dark.css">
         <style>
-            body {
-                background-color: rgb(25, 25, 25);
-            }
-            nav {
-                background: rgb(0, 0, 255);
-                margin: 0 auto;
-                margin-bottom: 20px;
-                display: flex;
-                padding: 20px;
-                border-radius: 20px;
-                height: 45px;
-                width: 97.5%;
-            }
-            #nav-img {
-                height: 45px;
-                width: 45px;;
-            }
-            #nav-h1 {
-                display: flex;
-                color: white;
-                flex: 1;
-                margin: 10px;
-            }
-            .nav-li {
-                display: inline-block;
-                padding: 0 10px;
-            }
-            .nav-a {
-                font-size: 20px;
-                color:#fff;
-            }
-          #location {
-            color:rgba(255, 255, 255, 0.75);
-            font-style:oblique;
-          }
-            a {
-                text-decoration: none;
-                color: #fff;
-            }
             maps {
                 background: #0f0f0f;
                 border-radius: 20px;
-                color: white;
             }
             #mapsdiv {
                 padding-left: 10%;
                 padding-right: 10%;
                 padding-top: 50px;
+            }
+            .map-a {
+                color: white;
             }
             #TEOTNE {
                 background: #0c0c0c;
@@ -112,19 +78,27 @@
                   <li class="nav-li">
                     <a class="nav-a" id="location" href="projects.html">Projects</a>
                   </li>
+                  <li class="nav-li">
+                    <a class="nav-a" ><span id="LMode" class="material-symbols-outlined">
+                        light_mode
+                        </span>
+                        <span id="DMode" class="material-symbols-outlined">
+                        dark_mode
+                        </span></a>
+                  </li>
             </ul>
         </nav>
         <div id="mapsdiv">
             <maps>
                 <div id="TEOTNE">
-                    <a href="teotne.html">
+                    <a href="teotne.html" class="map-a">
                         <img src="images/teotne-map-img.png" height="175px" style="float:left">
                         <h1 class="teotnetext">To Escape or To Not Escape (TEoTNE)</h1>
                         <p class="teotnetext">TEoTNE is an escape room map. There are 7 fun and unique levels.</p>
                     </a>
                 </div>
                 <div id="PU">
-                    <a href="pu.html">
+                    <a href="pu.html" class="map-a">
                         <img src="images/pu-map-img.png" height="175px" style="float:left">
                         <h1 class="putext">Parkour Universe</h1>
                         <p class="putext">Very hard and long parkour map using the Create mod.</p>
@@ -164,5 +138,26 @@
                 </ul>
             </info>
         </div>
+        <script>
+            $("#DMode").hide()
+        $("#LMode").on("click", lightMode)
+        $("#DMode").on("click", darkMode)
+        function lightMode() {
+            $("#DMode").show()
+            $("#LMode").hide()
+            $("#modeCSS").attr("href", "index-light.css")
+            $("#TEOTNE").css("background", "#dadada")
+            $("#PU").css("background", "#eaeaea")
+            $(".map-a").css("color", "black")
+        }
+        function darkMode() {
+            $("#LMode").show()
+            $("#DMode").hide()
+            $("#modeCSS").attr("href", "index-dark.css")
+            $("#TEOTNE").css("background", "#0c0c0c")
+            $("#PU").css("background", "#0f0f0f")
+            $(".map-a").css("color", "white")
+        }
+        </script>
     </body>
 </html>
