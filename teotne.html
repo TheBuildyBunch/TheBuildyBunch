@@ -1,243 +1,276 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-        <title>TEoTNE | The Buildy Bunch</title>
-        <link rel="icon" type="image/x-icon" href="images/teotne-map-img.png">
-        <link id="modeCSS" rel="stylesheet" type="text/css" href="index-dark.css">
-        <style>
-            info {
-                background: #0a0a0a;
-                display: flex;
-                padding: 20px;
-                border-radius: 20px;
-                color: white;
-                width: 97.5%;
-            }
-            #infodiv {
-                padding-top: 20px;
-            }
-            #ListUL {
-                padding-top: 20px;
-            }
-            #ReachUL {
-                columns: 2;
-                padding-top: 12.5px;
-            }
-            #LocateUL {
-                columns: 4;
-                padding-top: 25.5px;
-            }
-            .InfoLI {
-                display:flex;
-                padding:0 20px;
-            }
-            .slider {
-        width: 500px;
-        height: 300px;
-        background-color: yellow;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 0px;
-        text-align: center;
-        overflow: hidden;
-      }
-      .image-container {
-        width: 3000px;
-        background-color: pink;
-        height: 300px;
-        clear: both;
-        position: relative;
-        -webkit-transition: left 2s;
-        -moz-transition: left 2s;
-        -o-transition: left 2s;
-        transition: left 2s;
-      }
-      .slide {
-        float: left;
-        margin: 0px;
-        padding: 0px;
-        position: relative;
-      }
-      #slide-1:target ~ .image-container {
-        left: 0px;
-      }
-      #slide-2:target ~ .image-container {
-        left: -500px;
-      }
-      #slide-3:target ~ .image-container {
-        left: -1000px;
-      }
-      #slide-4:target ~ .image-container {
-        left: -1500px;
-      }
-      #slide-5:target ~ .image-container {
-        left: -2000px;
-      }
-      #slide-6:target ~ .image-container {
-        left: -2500px;
-      }
-      .buttons {
-        position: relative;
-        top: -20px;
-      }
-      .buttons a {
-        display: inline-block;
-        height: 15px;
-        width: 15px;
-        border-radius: 50px;
-        background-color: #000055;
-      }
-      #maptitle {
-        color: #ffffff;
-        font-size: 50px;
-        font-family: Georgia;
-        text-align: center;
-      }
-      #mapinfo {
-        font-size: 20px;
-        color: white;
-        text-align: center;
-        padding-top: 50px;
-      }
-      .mapinfo-a {
-        color: white;
-      }
-      #downloaddiv {
-        padding-top: 50px;
-        float:left;
-        margin-left: 47.5%;
-      }
-      #download {
-        background: #0f0;
-        color: black;
-        border-radius: 20px;
-        text-align: center;
-        display: flex;
-        width:100px;
-        padding-left: 5px;
-      }
-        </style>
-    </head>
-    <body>
-        <nav>
-          <a href="index.html">
-            <img id="nav-img" src="images/BuildyBunchLogo2022.png">
-          </a>
-            <h1 id="nav-h1">The Buildy Bunch</h1>
-            <ul id="nav-ul">
-                <li class="nav-li">
-                    <a class="nav-a" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-li">
-                    <a class="nav-a" href="projects.html">Projects</a>
-                  </li>
-                  <li class="nav-li">
-                    <a class="nav-a" ><span id="LMode" class="material-symbols-outlined">
-                      light_mode
-                      </span>
-                      <span id="DMode" class="material-symbols-outlined">
-                      dark_mode
-                      </span></a>
-                  </li>
-            </ul>
-        </nav>
-        <h1 id="maptitle">To Escape or To Not Escape (TEoTNE)</h1>
-        <div class="slider">
-            <span id="slide-1"></span>
-            <span id="slide-2"></span>
-            <span id="slide-3"></span>
-            <span id="slide-4"></span>
-            <span id="slide-5"></span>
-            <span id="slide-6"></span>
-            <div class="image-container">
-              <img src="images/prison.png" class="slide" width="500" height="300" />
-              <img src="images/shiver.png" class="slide" width="500" height="300" />
-              <img src="images/swamp.png" class="slide" width="500" height="300" />
-              <img src="images/temple.png" class="slide" width="500" height="300" />
-              <img src="images/sea.png" class="slide" width="500" height="300" />
-              <img src="images/school.png" class="slide" width="500" height="300" />
-            </div>
-            <div class="buttons">
-              <a href="#slide-1"></a>
-              <a href="#slide-2"></a>
-              <a href="#slide-3"></a>
-              <a href="#slide-4"></a>
-              <a href="#slide-5"></a>
-              <a href="#slide-6"></a>
-            </div>
-          </div>
-          <div id="downloaddiv">
-            <a id="download" href="maps/TEoTNE.zip" download>
-              <p>DOWNLOAD</p>
-            </a>
-          </div>
-          <div id="mapinfo">
-            <br>
-            <br>
-            <p>To Escape or To Not Escape is a puzzle/adventure map where you challenge your brain through 6 main and 1 hidden level. There are Easter Eggs in all of the main levels, so keep your eyes peeled.</p>
-            <br>
-            <p>Single Player</p>
-            <br>
-            <p>This map is for Java 1.16.5</p>
-            <br>
-            <p>-----------------------------------------------------------------------------------------------------------------------------------------</p>
-            <br>
-            <p>Report any bugs on our discord server: <a class="mapinfo-a" href="https://discord.gg/6bm5CTyKBG">https://discord.gg/6bm5CTyKBG</a></p>
-          </div>
-        <div id="infodiv">
-            <info>
-                <ul id="h1UL">
-                    <h1>Reach Us:</h1>
-                    <h1>Locate Us:</h1>
-                </ul> 
-                <ul id="ListUL">
-                    <ul id="ReachUL">
-                        <li class="InfoLI">
-                        <a href="https://discord.gg/6bm5CTyKBG">Discord Server</a>
-                        </li>
-                        <li class="InfoLI">
-                            <p>Email: buildy.bunch@gmail.com</p>
-                        </li>
-                    </ul>
-                    <ul id="LocateUL">
-                        <li class="InfoLI">
-                            <a href="https://www.planetminecraft.com/member/the_buildy_bunch/">Planet Minecraft</a>
-                        </li>
-                        <li class="InfoLI">
-                            <a href="https://www.curseforge.com/members/the_buildy_bunch/projects">CurseForge</a>
-                        </li>
-                        <li class="InfoLI">
-                            <a href="https://www.youtube.com/channel/UCPI5LsSIWL6iqVuXEmpLhig">YouTube</a>
-                        </li>
-                        <li class="InfoLI">
-                            <a href="https://linktr.ee/thebuildybunch">Linktree</a>
-                        </li>
-                    </ul>
-                </ul>
-            </info>
-        </div>
-        <script>
-          $("#DMode").hide()
-          $("#LMode").on("click", lightMode)
-          $("#DMode").on("click", darkMode)
-          function lightMode() {
-              $("#DMode").show()
-              $("#LMode").hide()
-              $("#modeCSS").attr("href", "index-light.css")
-              $("#maptitle").css("color", "black")
-              $("#mapinfo").css("color", "black")
-              $(".mapinfo-a").css("color", "black")
-          }
-          function darkMode() {
-              $("#LMode").show()
-              $("#DMode").hide()
-              $("#modeCSS").attr("href", "index-dark.css")
-              $("#maptitle").css("color", "white")
-              $("#mapinfo").css("color", "white")
-              $(".mapinfo-a").css("color", "white")
-          }
-          </script>
-    </body>
+
+<head>
+  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <title>TEoTNE | The Buildy Bunch</title>
+  <link rel="icon" type="image/x-icon" href="images/teotne-map-img.png">
+  <link id="modeCSS" rel="stylesheet" type="text/css" href="index-dark.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <style>
+    info {
+      background: #0a0a0a;
+      display: flex;
+      padding: 20px;
+      border-radius: 20px;
+      color: white;
+      width: 97.5%;
+    }
+
+    #infodiv {
+      padding-top: 20px;
+    }
+
+    #ListUL {
+      padding-top: 20px;
+    }
+
+    #ReachUL {
+      columns: 2;
+      padding-top: 12.5px;
+    }
+
+    #LocateUL {
+      columns: 4;
+      padding-top: 25.5px;
+    }
+
+    .InfoLI {
+      display: flex;
+      padding: 0 20px;
+    }
+
+    .slider {
+      width: 500px;
+      height: 300px;
+      background-color: yellow;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 0px;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .image-container {
+      width: 3000px;
+      background-color: pink;
+      height: 300px;
+      clear: both;
+      position: relative;
+      -webkit-transition: left 2s;
+      -moz-transition: left 2s;
+      -o-transition: left 2s;
+      transition: left 2s;
+    }
+
+    .slide {
+      float: left;
+      margin: 0px;
+      padding: 0px;
+      position: relative;
+    }
+
+    #slide-1:target~.image-container {
+      left: 0px;
+    }
+
+    #slide-2:target~.image-container {
+      left: -500px;
+    }
+
+    #slide-3:target~.image-container {
+      left: -1000px;
+    }
+
+    #slide-4:target~.image-container {
+      left: -1500px;
+    }
+
+    #slide-5:target~.image-container {
+      left: -2000px;
+    }
+
+    #slide-6:target~.image-container {
+      left: -2500px;
+    }
+
+    .buttons {
+      position: relative;
+      top: -20px;
+    }
+
+    .buttons a {
+      display: inline-block;
+      height: 15px;
+      width: 15px;
+      border-radius: 50px;
+      background-color: #000055;
+    }
+
+    #maptitle {
+      color: #ffffff;
+      font-size: 50px;
+      font-family: Georgia;
+      text-align: center;
+    }
+
+    #mapinfo {
+      font-size: 20px;
+      color: white;
+      text-align: center;
+      padding-top: 50px;
+    }
+
+    .mapinfo-a {
+      color: white;
+    }
+
+    #downloaddiv {
+      padding-top: 50px;
+      float: left;
+      margin-left: 47.5%;
+    }
+
+    #download {
+      background: #0f0;
+      color: black;
+      border-radius: 20px;
+      text-align: center;
+      display: flex;
+      width: 100px;
+      padding-left: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <a href="index.html">
+      <img id="nav-img" src="images/BuildyBunchLogo2022.png">
+    </a>
+    <h1 id="nav-h1">The Buildy Bunch</h1>
+    <ul id="nav-ul">
+      <li class="nav-li">
+        <a class="nav-a" href="index.html">Home</a>
+      </li>
+      <li class="nav-li">
+        <a class="nav-a" href="projects.html">Projects</a>
+      </li>
+      <li class="nav-li">
+        <a class="nav-a" style="cursor:pointer"><span id="LMode" class="material-symbols-outlined">
+            light_mode
+          </span>
+          <span id="DMode" class="material-symbols-outlined">
+            dark_mode
+          </span></a>
+      </li>
+    </ul>
+  </nav>
+  <h1 id="maptitle">To Escape or To Not Escape (TEoTNE)</h1>
+  <div class="slider">
+    <span id="slide-1"></span>
+    <span id="slide-2"></span>
+    <span id="slide-3"></span>
+    <span id="slide-4"></span>
+    <span id="slide-5"></span>
+    <span id="slide-6"></span>
+    <div class="image-container">
+      <img src="images/prison.png" class="slide" width="500" height="300" />
+      <img src="images/shiver.png" class="slide" width="500" height="300" />
+      <img src="images/swamp.png" class="slide" width="500" height="300" />
+      <img src="images/temple.png" class="slide" width="500" height="300" />
+      <img src="images/sea.png" class="slide" width="500" height="300" />
+      <img src="images/school.png" class="slide" width="500" height="300" />
+    </div>
+    <div class="buttons">
+      <a href="#slide-1"></a>
+      <a href="#slide-2"></a>
+      <a href="#slide-3"></a>
+      <a href="#slide-4"></a>
+      <a href="#slide-5"></a>
+      <a href="#slide-6"></a>
+    </div>
+  </div>
+  <div id="downloaddiv">
+    <a id="download" href="maps/TEoTNE.zip" download>
+      <p>DOWNLOAD</p><span class="material-symbols-outlined">
+        download
+      </span>
+    </a>
+  </div>
+  <div id="mapinfo">
+    <br>
+    <br>
+    <p>To Escape or To Not Escape is a puzzle/adventure map where you challenge your brain through 6 main and 1 hidden
+      level. There are Easter Eggs in all of the main levels, so keep your eyes peeled.</p>
+    <br>
+    <p>Single Player</p>
+    <br>
+    <p>This map is for Java 1.16.5</p>
+    <br>
+    <p>
+      -----------------------------------------------------------------------------------------------------------------------------------------
+    </p>
+    <br>
+    <p>Report any bugs on our discord server: <a class="mapinfo-a"
+        href="https://discord.gg/6bm5CTyKBG">https://discord.gg/6bm5CTyKBG</a></p>
+  </div>
+  <div id="infodiv">
+    <info>
+      <ul id="h1UL">
+        <h1>Reach Us:</h1>
+        <h1>Locate Us:</h1>
+      </ul>
+      <ul id="ListUL">
+        <ul id="ReachUL">
+          <li class="InfoLI">
+            <a href="https://discord.gg/6bm5CTyKBG">Discord Server</a>
+          </li>
+          <li class="InfoLI">
+            <p>Email: buildy.bunch@gmail.com</p>
+          </li>
+        </ul>
+        <ul id="LocateUL">
+          <li class="InfoLI">
+            <a href="https://www.planetminecraft.com/member/the_buildy_bunch/">Planet Minecraft</a>
+          </li>
+          <li class="InfoLI">
+            <a href="https://www.curseforge.com/members/the_buildy_bunch/projects">CurseForge</a>
+          </li>
+          <li class="InfoLI">
+            <a href="https://www.youtube.com/channel/UCPI5LsSIWL6iqVuXEmpLhig">YouTube</a>
+          </li>
+          <li class="InfoLI">
+            <a href="https://linktr.ee/thebuildybunch">Linktree</a>
+          </li>
+        </ul>
+      </ul>
+    </info>
+  </div>
+  <script>
+    $("#DMode").hide()
+    $("#LMode").on("click", lightMode)
+    $("#DMode").on("click", darkMode)
+    function lightMode() {
+      $("#DMode").show()
+      $("#LMode").hide()
+      $("#modeCSS").attr("href", "index-light.css")
+      $("#maptitle").css("color", "black")
+      $("#mapinfo").css("color", "black")
+      $(".mapinfo-a").css("color", "black")
+    }
+    function darkMode() {
+      $("#LMode").show()
+      $("#DMode").hide()
+      $("#modeCSS").attr("href", "index-dark.css")
+      $("#maptitle").css("color", "white")
+      $("#mapinfo").css("color", "white")
+      $(".mapinfo-a").css("color", "white")
+    }
+  </script>
+</body>
+
 </html>

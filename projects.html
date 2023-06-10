@@ -1,145 +1,162 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-        <title>Projects | The Buildy Bunch</title>
-        <link rel="icon" type="image/x-icon" href="images/BuildyBunchLogo2022.png">
-        <link id="modeCSS" rel="stylesheet" type="text/css" href="index-dark.css">
-        <style>
-            maps {
-                background: #0f0f0f;
-                border-radius: 20px;
-            }
-            #mapsdiv {
-                padding-left: 10%;
-                padding-right: 10%;
-                padding-top: 50px;
-            }
-            .map-a {
-                color: white;
-            }
-            #TEOTNE {
-                background: #0c0c0c;
-                padding-left: 25px;
-                padding-top: 25px;
-                height: 200px;
-            }
-            .teotnetext {
-                padding-left: 200px;
-            }
-            #PU {
-                background: #0f0f0f;
-                padding-left: 25px;
-                padding-top: 25px;
-                height: 200px;
-            }
-            .putext {
-                padding-left: 200px;
-            }
-            info {
-                background: #0a0a0a;
-                display: flex;
-                padding: 20px;
-                border-radius: 20px;
-                color: white;
-                width: 97.5%;
-            }
-            #infodiv {
-                padding-top: 70px;
-            }
-            #ListUL {
-                padding-top: 20px;
-            }
-            #ReachUL {
-                columns: 2;
-                padding-top: 12.5px;
-            }
-            #LocateUL {
-                columns: 4;
-                padding-top: 25.5px;
-            }
-            .InfoLI {
-                display:flex;
-                padding:0 20px;
-            }
-        </style>
-    </head>
-    <body>
-        <nav>
-            <a href="index.html">
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Projects | The Buildy Bunch</title>
+    <link rel="icon" type="image/x-icon" href="images/BuildyBunchLogo2022.png">
+    <link id="modeCSS" rel="stylesheet" type="text/css" href="index-dark.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <style>
+        maps {
+            background: #0f0f0f;
+            border-radius: 20px;
+        }
+
+        #mapsdiv {
+            padding-left: 10%;
+            padding-right: 10%;
+            padding-top: 50px;
+        }
+
+        .map-a {
+            color: white;
+        }
+
+        #TEOTNE {
+            background: #0c0c0c;
+            padding-left: 25px;
+            padding-top: 25px;
+            height: 200px;
+        }
+
+        .teotnetext {
+            padding-left: 200px;
+        }
+
+        #PU {
+            background: #0f0f0f;
+            padding-left: 25px;
+            padding-top: 25px;
+            height: 200px;
+        }
+
+        .putext {
+            padding-left: 200px;
+        }
+
+        info {
+            background: #0a0a0a;
+            display: flex;
+            padding: 20px;
+            border-radius: 20px;
+            color: white;
+            width: 97.5%;
+        }
+
+        #infodiv {
+            padding-top: 70px;
+        }
+
+        #ListUL {
+            padding-top: 20px;
+        }
+
+        #ReachUL {
+            columns: 2;
+            padding-top: 12.5px;
+        }
+
+        #LocateUL {
+            columns: 4;
+            padding-top: 25.5px;
+        }
+
+        .InfoLI {
+            display: flex;
+            padding: 0 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">
             <img id="nav-img" src="images/BuildyBunchLogo2022.png">
-            </a>
-            <h1 id="nav-h1">The Buildy Bunch</h1>
-            <ul id="nav-ul">
-                <li class="nav-li">
-                    <a class="nav-a" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-li">
-                    <a class="nav-a" id="location" href="projects.html">Projects</a>
-                  </li>
-                  <li class="nav-li">
-                    <a class="nav-a" ><span id="LMode" class="material-symbols-outlined">
+        </a>
+        <h1 id="nav-h1">The Buildy Bunch</h1>
+        <ul id="nav-ul">
+            <li class="nav-li">
+                <a class="nav-a" href="index.html">Home</a>
+            </li>
+            <li class="nav-li">
+                <a class="nav-a" id="location" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-li">
+                <a class="nav-a" style="cursor:pointer"><span id="LMode" class="material-symbols-outlined">
                         light_mode
-                        </span>
-                        <span id="DMode" class="material-symbols-outlined">
+                    </span>
+                    <span id="DMode" class="material-symbols-outlined">
                         dark_mode
-                        </span></a>
-                  </li>
+                    </span></a>
+            </li>
+        </ul>
+    </nav>
+    <div id="mapsdiv">
+        <maps>
+            <div id="TEOTNE">
+                <a href="teotne.html" class="map-a">
+                    <img src="images/teotne-map-img.png" height="175px" style="float:left">
+                    <h1 class="teotnetext">To Escape or To Not Escape (TEoTNE)</h1>
+                    <p class="teotnetext">TEoTNE is an escape room map. There are 7 fun and unique levels.</p>
+                </a>
+            </div>
+            <div id="PU">
+                <a href="pu.html" class="map-a">
+                    <img src="images/pu-map-img.png" height="175px" style="float:left">
+                    <h1 class="putext">Parkour Universe</h1>
+                    <p class="putext">Very hard and long parkour map using the Create mod.</p>
+                </a>
+            </div>
+        </maps>
+    </div>
+    <div id="infodiv">
+        <info>
+            <ul id="h1UL">
+                <h1>Reach Us:</h1>
+                <h1>Locate Us:</h1>
             </ul>
-        </nav>
-        <div id="mapsdiv">
-            <maps>
-                <div id="TEOTNE">
-                    <a href="teotne.html" class="map-a">
-                        <img src="images/teotne-map-img.png" height="175px" style="float:left">
-                        <h1 class="teotnetext">To Escape or To Not Escape (TEoTNE)</h1>
-                        <p class="teotnetext">TEoTNE is an escape room map. There are 7 fun and unique levels.</p>
-                    </a>
-                </div>
-                <div id="PU">
-                    <a href="pu.html" class="map-a">
-                        <img src="images/pu-map-img.png" height="175px" style="float:left">
-                        <h1 class="putext">Parkour Universe</h1>
-                        <p class="putext">Very hard and long parkour map using the Create mod.</p>
-                    </a>
-                </div>
-            </maps>
-        </div>
-        <div id="infodiv">
-            <info>
-                <ul id="h1UL">
-                    <h1>Reach Us:</h1>
-                    <h1>Locate Us:</h1>
-                </ul> 
-                <ul id="ListUL">
-                    <ul id="ReachUL">
-                        <li class="InfoLI">
+            <ul id="ListUL">
+                <ul id="ReachUL">
+                    <li class="InfoLI">
                         <a href="https://discord.gg/6bm5CTyKBG">Discord Server</a>
-                        </li>
-                        <li class="InfoLI">
-                            <p>Email: buildy.bunch@gmail.com</p>
-                        </li>
-                    </ul>
-                    <ul id="LocateUL">
-                        <li class="InfoLI">
-                            <a href="https://www.planetminecraft.com/member/the_buildy_bunch/">Planet Minecraft</a>
-                        </li>
-                        <li class="InfoLI">
-                            <a href="https://www.curseforge.com/members/the_buildy_bunch/projects">CurseForge</a>
-                        </li>
-                        <li class="InfoLI">
-                            <a href="https://www.youtube.com/channel/UCPI5LsSIWL6iqVuXEmpLhig">YouTube</a>
-                        </li>
-                        <li class="InfoLI">
-                            <a href="https://linktr.ee/thebuildybunch">Linktree</a>
-                        </li>
-                    </ul>
+                    </li>
+                    <li class="InfoLI">
+                        <p>Email: buildy.bunch@gmail.com</p>
+                    </li>
                 </ul>
-            </info>
-        </div>
-        <script>
-            $("#DMode").hide()
+                <ul id="LocateUL">
+                    <li class="InfoLI">
+                        <a href="https://www.planetminecraft.com/member/the_buildy_bunch/">Planet Minecraft</a>
+                    </li>
+                    <li class="InfoLI">
+                        <a href="https://www.curseforge.com/members/the_buildy_bunch/projects">CurseForge</a>
+                    </li>
+                    <li class="InfoLI">
+                        <a href="https://www.youtube.com/channel/UCPI5LsSIWL6iqVuXEmpLhig">YouTube</a>
+                    </li>
+                    <li class="InfoLI">
+                        <a href="https://linktr.ee/thebuildybunch">Linktree</a>
+                    </li>
+                </ul>
+            </ul>
+        </info>
+    </div>
+    <script>
+        $("#DMode").hide()
         $("#LMode").on("click", lightMode)
         $("#DMode").on("click", darkMode)
         function lightMode() {
@@ -158,6 +175,7 @@
             $("#PU").css("background", "#0f0f0f")
             $(".map-a").css("color", "white")
         }
-        </script>
-    </body>
+    </script>
+</body>
+
 </html>
