@@ -7,7 +7,7 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Projects | The Buildy Bunch</title>
     <link rel="icon" type="image/x-icon" href="images/BuildyBunchLogo2022.png">
-    <link id="modeCSS" rel="stylesheet" type="text/css" href="index-dark.css">
+    <link id="modeCSS" rel="stylesheet" type="text/css" href="css-sheets/index-dark.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <style>
@@ -108,14 +108,14 @@
     <div id="mapsdiv">
         <maps>
             <div id="TEOTNE">
-                <a href="teotne.html" class="map-a">
+                <a href="maps/teotne.html" class="map-a">
                     <img src="images/teotne-map-img.png" height="175px" style="float:left">
                     <h1 class="teotnetext">To Escape or To Not Escape (TEoTNE)</h1>
                     <p class="teotnetext">TEoTNE is an escape room map. There are 7 fun and unique levels.</p>
                 </a>
             </div>
             <div id="PU">
-                <a href="pu.html" class="map-a">
+                <a href="maps/pu.html" class="map-a">
                     <img src="images/pu-map-img.png" height="175px" style="float:left">
                     <h1 class="putext">Parkour Universe</h1>
                     <p class="putext">Very hard and long parkour map using the Create mod.</p>
@@ -162,7 +162,7 @@
         function lightMode() {
             $("#DMode").show()
             $("#LMode").hide()
-            $("#modeCSS").attr("href", "index-light.css")
+            $("#modeCSS").attr("href", "css-sheets/index-light.css")
             $("#TEOTNE").css("background", "#dadada")
             $("#PU").css("background", "#eaeaea")
             $(".map-a").css("color", "black")
@@ -170,7 +170,7 @@
         function darkMode() {
             $("#LMode").show()
             $("#DMode").hide()
-            $("#modeCSS").attr("href", "index-dark.css")
+            $("#modeCSS").attr("href", "css-sheets/index-dark.css")
             $("#TEOTNE").css("background", "#0c0c0c")
             $("#PU").css("background", "#0f0f0f")
             $(".map-a").css("color", "white")
