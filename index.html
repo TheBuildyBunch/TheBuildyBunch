@@ -8,18 +8,8 @@
     <title>Home | The Buildy Bunch</title>
     <link rel="icon" type="image/x-icon" href="images/BuildyBunchLogo2022.png">
     <link id="modeCSS" rel="stylesheet" type="text/css" href="css-sheets/index-dark.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <style>
-        .material-symbols-outlined {
-          font-variation-settings:
-          'FILL' 0,
-          'wght' 500,
-          'GRAD' 200,
-          'opsz' 48
-        }
-        </style>
     <style>
         body {
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -39,7 +29,7 @@
             text-align: start;
             background-image: url(images/introback.jpg);
             background-size: cover;
-            height: 1080px;
+            height: 108vh;
             width: 100%;
             margin-left: auto;
             margin-right: auto;
@@ -85,32 +75,32 @@
             font-family: 'Cooper Black';
             text-align: center;
             background: rgb(37, 37, 37);
-            width: 1000px;
+            width: 100vh;
             margin-left: auto;
             margin-right: auto;
             border: 2px solid black;
-            border-radius: 10px;
+            border-radius: 1vh;
         }
 
         info {
             background: #0c0c0c;
             display: flex;
-            padding: 5px;
-            border-radius: 20px;
+            padding: .5vh;
+            border-radius: 2vh;
             color: rgb(232, 232, 232);
             margin: auto;
             margin-bottom: auto;
         }
 
         #infodiv {
-            padding-top: 25px;
+            padding-top: 2.5vh;
             margin-top: auto;
             margin-bottom: auto;
         }
 
         .InfoLI {
             display: flex;
-            height: 20px;
+            height: 2vh;
             margin-top: auto;
             margin-bottom: auto;
         }
@@ -242,12 +232,16 @@
             $("#LMode").hide()
             $("#modeCSS").attr("href", "css-sheets/index-light.css")
             $(".team").css("color", "black")
+            $(".header").css("background", "#eeeeee")
+            $(".header").css("border", "2px solid #aaaaaa")
         }
         function darkMode() {
             $("#LMode").show()
             $("#DMode").hide()
             $("#modeCSS").attr("href", "css-sheets/index-dark.css")
             $(".team").css("color", "white")
+            $(".header").css("background", "#252525")
+            $(".header").css("border", "2px solid #000000")
         }
     </script>
 </body>

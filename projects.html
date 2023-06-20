@@ -11,73 +11,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <style>
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        li {
+            list-style-type: none;
+            display: inline;
+        }
         maps {
             background: #0f0f0f;
-            border-radius: 20px;
+            border-radius: 2vh;
         }
 
         #mapsdiv {
-            padding-left: 10%;
-            padding-right: 10%;
-            padding-top: 50px;
+            padding-left: 10vw;
+            padding-right: 10vw;
+            padding-top: 5vh;
         }
 
         .map-a {
             color: white;
         }
 
+        .mapImage {
+            height: 17.5vh;
+        }
+
         #TEOTNE {
             background: #0c0c0c;
-            padding-left: 25px;
-            padding-top: 25px;
-            height: 200px;
+            padding-left: 2.5vw;
+            padding-top: 2.5vh;
+            height: 20vh;
         }
 
         .teotnetext {
-            padding-left: 200px;
+            padding-left: 10vw;
         }
 
         #PU {
             background: #0f0f0f;
-            padding-left: 25px;
-            padding-top: 25px;
-            height: 200px;
+            padding-left: 2.5vw;
+            padding-top: 2.5vh;
+            height: 20vh;
         }
 
         .putext {
-            padding-left: 200px;
+            padding-left: 10vw;
         }
 
         info {
-            background: #0a0a0a;
+            background: #0c0c0c;
             display: flex;
-            padding: 20px;
-            border-radius: 20px;
-            color: white;
-            width: 97.5%;
+            padding: .5vh;
+            border-radius: 2vh;
+            color: rgb(232, 232, 232);
+            margin: auto;
+            position: absolute;
+            bottom: 0;
+            width: 99.5vw;
         }
 
         #infodiv {
-            padding-top: 70px;
-        }
-
-        #ListUL {
-            padding-top: 20px;
-        }
-
-        #ReachUL {
-            columns: 2;
-            padding-top: 12.5px;
-        }
-
-        #LocateUL {
-            columns: 4;
-            padding-top: 25.5px;
+            padding-top: 2.5vh;
+            margin-top: auto;
+            margin-bottom: auto;
         }
 
         .InfoLI {
             display: flex;
-            padding: 0 20px;
+            height: 2vh;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+        a:hover {
+            color: rgb(187, 187, 187);
+            text-decoration: underline;
+        }
+
+        ul {
+            padding: 0;
+            padding-left: 65px;
+            padding-right: 65px;
         }
     </style>
 </head>
@@ -109,14 +125,14 @@
         <maps>
             <div id="TEOTNE">
                 <a href="maps/teotne.html" class="map-a">
-                    <img src="images/teotne-map-img.png" height="175px" style="float:left">
+                    <img src="images/teotne-map-img.png" class="mapImage" style="float:left">
                     <h1 class="teotnetext">To Escape or To Not Escape (TEoTNE)</h1>
                     <p class="teotnetext">TEoTNE is an escape room map. There are 7 fun and unique levels.</p>
                 </a>
             </div>
             <div id="PU">
                 <a href="maps/pu.html" class="map-a">
-                    <img src="images/pu-map-img.png" height="175px" style="float:left">
+                    <img src="images/pu-map-img.png" class="mapImage" style="float:left">
                     <h1 class="putext">Parkour Universe</h1>
                     <p class="putext">Very hard and long parkour map using the Create mod.</p>
                 </a>
@@ -125,33 +141,44 @@
     </div>
     <div id="infodiv">
         <info>
-            <ul id="h1UL">
-                <h1>Reach Us:</h1>
-                <h1>Locate Us:</h1>
-            </ul>
-            <ul id="ListUL">
-                <ul id="ReachUL">
+            <ul style="margin-left:auto; margin-right: auto; display:flex;">
+                <ul>
+                    <h1 style="font-size: xxx-large; padding-bottom:10px;">
+                        Reach Us:
+                    </h1>
                     <li class="InfoLI">
-                        <a href="https://discord.gg/6bm5CTyKBG">Discord Server</a>
+                        <a href="https://discord.gg/6bm5CTyKBG">
+                            Discord Server
+                        </a>
                     </li>
                     <li class="InfoLI">
-                        <p>Email: buildy.bunch@gmail.com</p>
-                    </li>
-                </ul>
-                <ul id="LocateUL">
-                    <li class="InfoLI">
-                        <a href="https://www.planetminecraft.com/member/the_buildy_bunch/">Planet Minecraft</a>
-                    </li>
-                    <li class="InfoLI">
-                        <a href="https://www.curseforge.com/members/the_buildy_bunch/projects">CurseForge</a>
-                    </li>
-                    <li class="InfoLI">
-                        <a href="https://www.youtube.com/channel/UCPI5LsSIWL6iqVuXEmpLhig">YouTube</a>
-                    </li>
-                    <li class="InfoLI">
-                        <a href="https://linktr.ee/thebuildybunch">Linktree</a>
+                        <a href="mailto:buildy.bunch@gmail.com">
+                            Email
+                        </a>
                     </li>
                 </ul>
+                <ul style="width: 15px;">
+                    linger
+                </ul>
+                <ul">
+                    <h1 style="font-size: xxx-large; padding-bottom:10px;">
+                        Locate Us:
+                    </h1>
+                    <li class="InfoLI">
+                        <a href="https://www.planetminecraft.com/member/the_buildy_bunch/">
+                            Planet Minecraft
+                        </a>
+                    </li>
+                    <li class="InfoLI">
+                        <a href="https://www.curseforge.com/members/the_buildy_bunch/projects">
+                            CurseForge
+                        </a>
+                    </li>
+                    <li class="InfoLI">
+                        <a href="https://www.youtube.com/channel/UCPI5LsSIWL6iqVuXEmpLhig">
+                            YouTube
+                        </a>
+                    </li>
             </ul>
         </info>
     </div>

@@ -1,6 +1,6 @@
 .material-symbols-outlined {
   position: relative;
-  top: 5px;
+  top: .5vh;
   font-variation-settings: "FILL" 1, "wght" 600, "GRAD" 200, "opsz" 40;
 }
 body {
@@ -11,26 +11,25 @@ nav {
   margin: 0 auto;
   margin-bottom: 20px;
   display: flex;
-  padding: 20px;
-  border-radius: 20px;
-  height: 45px;
-  width: 97.5%;
+  padding: 2vh;
+  border-radius: 2vh;
+  height: 4vh;
+  width: 97vw;
 }
 #nav-img {
-  height: 45px;
-  width: 45px;
+  height: 4.5vh;
 }
 #nav-h1 {
   display: flex;
   color: rgb(255, 255, 255);
   flex: 1;
-  margin: 10px;
+  margin: 1vh;
 }
 .nav-li {
   display: inline-block;
-  padding: 0 10px;
+  padding: 0 1vh;
   position: relative;
-  bottom: 10px;
+  bottom: 1vh;
 }
 .nav-a {
   font-size: 20px;
