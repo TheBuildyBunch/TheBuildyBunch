@@ -24,7 +24,7 @@
 
         .intro {
             color: rgb(13, 37, 220);
-            font-size: 100px;
+            font-size: 10vh;
             font-family: system-ui, sans-serif;
             text-align: start;
             background-image: url(images/introback.jpg);
@@ -44,7 +44,7 @@
             margin-left: auto;
             margin-right: auto;
             margin-top: 0;
-            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-width: .2vh;
             -webkit-text-stroke-color: rgb(225, 225, 255);
         }
 
@@ -56,7 +56,7 @@
         }
 
         .teamskins {
-            width: 500px;
+            width: 50vh;
         }
 
         .dt {
@@ -71,14 +71,14 @@
         }
 
         .header {
-            font-size: 60px;
+            font-size: 6vh;
             font-family: 'Cooper Black';
             text-align: center;
             background: rgb(37, 37, 37);
             width: 100vh;
             margin-left: auto;
             margin-right: auto;
-            border: 2px solid black;
+            border: .4vh solid black;
             border-radius: 1vh;
         }
 
@@ -106,7 +106,7 @@
         }
 
         .staffbox {
-            border: 4px solid rgb(9, 9, 166);
+            border: .4vw solid rgb(9, 9, 166);
             display: inline-block;
             margin-left: auto;
             margin-right: auto;
@@ -125,8 +125,8 @@
 
         ul {
             padding: 0;
-            padding-left: 65px;
-            padding-right: 65px;
+            padding-left: 6.5vh;
+            padding-right: 6.5vh;
         }
     </style>
 </head>
@@ -233,7 +233,7 @@
             $("#modeCSS").attr("href", "css-sheets/index-light.css")
             $(".team").css("color", "black")
             $(".header").css("background", "#eeeeee")
-            $(".header").css("border", "2px solid #aaaaaa")
+            $(".header").css("border", ".4vh solid #aaaaaa")
         }
         function darkMode() {
             $("#LMode").show()
@@ -241,7 +241,7 @@
             $("#modeCSS").attr("href", "css-sheets/index-dark.css")
             $(".team").css("color", "white")
             $(".header").css("background", "#252525")
-            $(".header").css("border", "2px solid #000000")
+            $(".header").css("border", ".4vh solid #000000")
         }
     </script>
 </body>

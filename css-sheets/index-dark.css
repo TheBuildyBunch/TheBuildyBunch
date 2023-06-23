@@ -24,6 +24,7 @@ nav {
   color: white;
   flex: 1;
   margin: 1vh;
+  font-size: 3vh;
 }
 .nav-li {
   display: inline-block;
@@ -32,7 +33,7 @@ nav {
   bottom: 1vh;
 }
 .nav-a {
-  font-size: 20px;
+  font-size: 2vh;
   color: #fff;
 }
 #location {
