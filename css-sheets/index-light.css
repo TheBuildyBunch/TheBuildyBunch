@@ -5,6 +5,13 @@
 }
 body {
   background-color: rgb(255, 255, 255);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+}
+li {
+  list-style-type: none;
+  display: inline;
 }
 nav {
   background: rgb(0, 0, 255);
@@ -43,4 +50,40 @@ nav {
 a {
   text-decoration: none;
   color: #ffffff;
+}
+
+info {
+  background: #0c0c0c;
+  display: flex;
+  padding: .5vh;
+  border-radius: 2vh;
+  color: rgb(232, 232, 232);
+  margin: auto;
+  position: absolute;
+  width: 99.5vw;
+}
+
+#infodiv {
+  padding-top: 2.5vh;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.InfoLI {
+  display: flex;
+  height: 2vh;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 2vh;
+}
+
+a:hover {
+  color: rgb(187, 187, 187);
+  text-decoration: underline;
+}
+
+ul {
+  padding: 0;
+  padding-left: 6.5vh;
+  padding-right: 6.5vh;
 }
