@@ -133,11 +133,16 @@
     #download {
       background: #0f0;
       color: black;
-      border-radius: 20px;
+      border-radius: 1vw;
       text-align: center;
       display: flex;
-      width: 100px;
+      width: 6vw;
       padding-left: 5px;
+      text-decoration: none !important;
+    }
+    #downloadsymbol {
+      position: relative;
+      top: 1.25vh;
     }
   </style>
 </head>
@@ -189,9 +194,7 @@
   </div>
   <div id="downloaddiv">
     <a id="download" href="/map-files/Parkour+Universe (1).zip" download>
-      <p>DOWNLOAD</p><span class="material-symbols-outlined">
-        download
-      </span>
+      <span class="material-symbols-outlined" id="downloadsymbol">download</span><p>DOWNLOAD</p>
     </a>
   </div>
   <div id="mapinfo">
@@ -217,36 +220,47 @@
   </div>
   <div id="infodiv">
     <info>
-      <ul id="h1UL">
-        <h1>Reach Us:</h1>
-        <h1>Locate Us:</h1>
-      </ul>
-      <ul id="ListUL">
-        <ul id="ReachUL">
-          <li class="InfoLI">
-            <a href="https://discord.gg/6bm5CTyKBG">Discord Server</a>
-          </li>
-          <li class="InfoLI">
-            <p>Email: buildy.bunch@gmail.com</p>
-          </li>
+        <ul style="margin-left:auto; margin-right: auto; display:flex;">
+            <ul>
+                <h1 style="font-size: 5vh; padding-bottom:10px;">
+                    Reach Us:
+                </h1>
+                <li class="InfoLI">
+                    <a href="https://discord.gg/6bm5CTyKBG">
+                        Discord Server
+                    </a>
+                </li>
+                <li class="InfoLI">
+                    <a href="mailto:buildy.bunch@gmail.com">
+                        Email
+                    </a>
+                </li>
+            </ul>
+            <ul style="width: 15px;">
+                linger
+            </ul>
+            <ul">
+                <h1 style="font-size: 5vh; padding-bottom:10px;">
+                    Locate Us:
+                </h1>
+                <li class="InfoLI">
+                    <a href="https://www.planetminecraft.com/member/the_buildy_bunch/">
+                        Planet Minecraft
+                    </a>
+                </li>
+                <li class="InfoLI">
+                    <a href="https://www.curseforge.com/members/the_buildy_bunch/projects">
+                        CurseForge
+                    </a>
+                </li>
+                <li class="InfoLI">
+                    <a href="https://www.youtube.com/channel/UCPI5LsSIWL6iqVuXEmpLhig">
+                        YouTube
+                    </a>
+                </li>
         </ul>
-        <ul id="LocateUL">
-          <li class="InfoLI">
-            <a href="https://www.planetminecraft.com/member/the_buildy_bunch/">Planet Minecraft</a>
-          </li>
-          <li class="InfoLI">
-            <a href="https://www.curseforge.com/members/the_buildy_bunch/projects">CurseForge</a>
-          </li>
-          <li class="InfoLI">
-            <a href="https://www.youtube.com/channel/UCPI5LsSIWL6iqVuXEmpLhig">YouTube</a>
-          </li>
-          <li class="InfoLI">
-            <a href="https://linktr.ee/thebuildybunch">Linktree</a>
-          </li>
-        </ul>
-      </ul>
     </info>
-  </div>
+</div>
   <script>
     $("#DMode").hide()
     $("#LMode").on("click", lightMode)
